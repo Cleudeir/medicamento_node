@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "medicamento_expo",
+    "slug": "medicamento_expo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "/src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "/src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "no"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "/src/assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "blockedPermissions": [
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.WAKE_LOCK"
+      ],
+      "package": "com.cleudeir.medicamento_expo"
+    },
+    "web": {
+      "favicon": "/src/assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "/src/local/assets/notification-icon.png",
+          "color": "#ffffff",
+          "sounds": [
+            "/src/local/assets/notification-sound.wav",
+            "/src/local/assets/notification-sound-other.wav"
+          ]
+        }
+      ]
+    ]
+  }
+}
